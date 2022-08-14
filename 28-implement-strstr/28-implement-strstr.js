@@ -5,7 +5,7 @@
  */
 var strStr = function(haystack, needle) {
     let needleLn = needle.length;
-    for (let i = 0; i < haystack.length; i++) {
+    for (let i = 0; i < haystack.length - needleLn + 1; i++) {
         if (haystack.slice(i, i + needleLn) === needle) {
             return i;
         }
